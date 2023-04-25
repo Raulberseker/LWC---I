@@ -1,0 +1,23 @@
+<template>
+	<div class="app slds-p-around_x-large">
+		<div>
+			<p>Empresa: {div1.empresa}</p>
+			<p>CNPJ: {div1.cnpj}</p>
+			<p>Endereço: {div1.endereco}</p>
+		</div>
+		<div if:true={isDiv2And3Visible}>
+			<p>Produto: {div2.produto}</p>
+			<p>Descrição: {div2.descricao}</p>
+			<p>Preço: {div2.preco}</p>
+		</div>
+		<div if:true={isDiv2And3Visible}>
+			<p>Promoção</p>
+			<p>Oferta1: {div3.oferta1}</p>
+			<p>Oferta2: {div3.oferta2}</p>
+		</div>
+		<lightning-button variant="destructive-text" label="Ocultar promocao" title="ocultar promocao"
+			onclick={handleButtonClick} class="slds-m-left_x-small"></lightning-button>
+
+
+	</div>
+</template>
