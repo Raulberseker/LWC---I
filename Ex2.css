@@ -1,0 +1,28 @@
+h1 {
+  color: rgb(0, 112, 210);
+  text-align: center;
+  font-size: 36px;
+  font-family: "Arial", sans-serif;
+  margin-top: 20px;
+  background-color: #eee;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  background-color: red;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  width: 50%;
+  border: 5px solid gray;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.05);
+  border: 5px solid yellow;
+}
